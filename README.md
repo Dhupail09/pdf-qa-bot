@@ -1,100 +1,71 @@
-PDF Q&A Bot
-A simple, interactive web app built with Streamlit that allows users to upload PDF documents, ask questions, and receive instant answers using a Large Language Model (LLM).
+ ***PDF Q&A Bot***
 
-**(1)Features**
- PDF Upload — Upload any PDF document.
+**A simple and interactive web app built with Streamlit that lets you:**
 
- Question Answering — Ask specific questions about the PDF content.
+**Upload any PDF **
 
- LLM Integration — Uses Google's Gemini API for intelligent answers.
+Ask questions about its content ❓
 
- Efficient Search — Leverages FAISS vector database for fast retrieval.
+Get instant answers powered by Google’s Gemini API 🤖
 
- User-Friendly UI — Minimal and clean interface using Streamlit.
+Enjoy fast, efficient search using FAISS ⚡
 
-**(2)Tech Stack**
+**Feautures**
+
+ PDF Upload – Upload any PDF document for instant processing.
+
+ Question Answering – Ask specific questions based on the PDF’s content.
+
+ LLM Integration – Uses Google’s Gemini API for intelligent answers.
+
+ Efficient Search – Leverages FAISS vector database for fast retrieval.
+
+ **Tech Stack**
+ 
 Frontend: Streamlit
 
 Backend: Python
 
-Embedding Model: HuggingFace sentence-transformers
+AI Model: Google Gemini API
 
-Database: FAISS
+Search Engine: FAISS
 
-API: Google Gemini
+***How It Works**
+Upload your PDF document.
 
-Environment Variables: python-dotenv
+Ask any question about the document’s content.
 
-**(3)How It Works****
-PDF Upload
+Get accurate, AI-generated answers in seconds.
 
-User uploads a PDF file.
+***Installation**
 
-Text Extraction
+Clone the repository:
 
-Extracts and cleans text from the PDF.
-
-Embedding Generation
-
-Uses HuggingFace to convert text chunks into vector embeddings.
-
-Vector Storage
-
-Stores embeddings in FAISS for efficient similarity search.
-**
-**User Query****
-
-User asks a question about the document.
-
-Relevant Chunk Retrieval
-
-FAISS finds the most relevant sections of the PDF.
-
-**LLM Response**
-
-Gemini API processes the retrieved content and generates a final answer.
-
-(4)Installation
 bash
 Copy
 Edit
-# Clone the repository
-git clone https://github.com/YourUsername/pdf-qa-bot.git
+git clone https://github.com/Dhupail09/pdf-qa-bot.git
 cd pdf-qa-bot
+Install dependencies:
 
-# Create a virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
+bash
+Copy
+Edit
 pip install -r requirements.txt
-Environment Setup
-**Create a .env file in the root directory:**
+Add your Gemini API Key to the .env file:
 
 ini
 Copy
 Edit
 GEMINI_API_KEY=your_api_key_here
-Run the App
+Run the Streamlit app:
+
 bash
 Copy
 Edit
-streamlit run app.py
+streamlit run pdf_project.py
 
-**Example Usage**
-Upload your PDF.
 
-Ask: "Summarize the first chapter"
+**License**
 
-The bot will extract relevant text and answer using the LLM.
-
-Folder Structure
-bash
-Copy
-Edit
-Option to save chat history
-
-Model selection (Gemini, OpenAI, etc.)
-
-Summarization mode
-
+This project is open-source and available for all Users.
