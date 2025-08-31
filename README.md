@@ -70,4 +70,3 @@ streamlit run pdf_project.py
 **License**
 
 This project is open-source and available for all Users.
->>>>>>> 4c09897d0a3404d24a5fe8076908cd54aedd49ef
